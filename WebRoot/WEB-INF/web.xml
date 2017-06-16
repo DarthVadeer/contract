@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="GBK"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	
+    <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>	
+
+    <servlet>
+    	<servlet-name>loginServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>loginServlet</servlet-name>
+    	<url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>registerServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.RegisterServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>registerServlet</servlet-name>
+    	<url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>cpermissionServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.CPermissionServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>cpermissionServlet</servlet-name>
+    	<url-pattern>/permission</url-pattern>
+    </servlet-mapping>
+     
+    <servlet>
+    	<servlet-name>edituserServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.EditUserServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>edituserServlet</servlet-name>
+    	<url-pattern>/editUser</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+    	<servlet-name>deleteuserServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.DeleteUserServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>deleteuserServlet</servlet-name>
+    	<url-pattern>/deleteUser</url-pattern>
+    </servlet-mapping>
+        <servlet>
+    	<servlet-name>draftcontractServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.DraftContractServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>draftcontractServlet</servlet-name>
+    	<url-pattern>/draftcontract</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+    	<servlet-name>assigncontractServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.AssignContractServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>assigncontractServlet</servlet-name>
+    	<url-pattern>/assigncontract</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>editCustomerServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.EditCustomerServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>editCustomerServlet</servlet-name>
+    	<url-pattern>/editCustomer</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>countersignopinionServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.CountersignOpinionServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>countersignopinionServlet</servlet-name>
+    	<url-pattern>/addhqopinion</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+    	<servlet-name>finalizecontractServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.FinalizeContractServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>finalizecontractServlet</servlet-name>
+    	<url-pattern>/finalize</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>approvecontractServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.ApproveContractServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>approvecontractServlet</servlet-name>
+    	<url-pattern>/approvecontract</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+    	<servlet-name>addqdopinionServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.SignContractServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>addqdopinionServlet</servlet-name>
+    	<url-pattern>/addQDopinion</url-pattern>
+    </servlet-mapping>
+    
+     
+      <servlet>
+    	<servlet-name>modifycustomerServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.ModifyCustomerServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>modifycustomerServlet</servlet-name>
+    	<url-pattern>/modifycustomer</url-pattern>
+    </servlet-mapping>
+    
+       <servlet>
+    	<servlet-name>deletecustomerServlet</servlet-name>
+    	<servlet-class>com.ruanko.web.DeleteCustomerServlet</servlet-class>
+    </servlet>
+     <servlet-mapping>
+    	<servlet-name>deletecustomerServlet</servlet-name>
+    	<url-pattern>/deleteCustomer</url-pattern>
+    </servlet-mapping>
+    
+    
+</web-app>
